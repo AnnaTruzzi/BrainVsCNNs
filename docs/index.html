@@ -12,25 +12,25 @@ than the corresponding network trained in either a supervised or unsupervised ma
 <h2>Highlights</h2>
 <ul>
   <li>Activations in some untrained random weights architectures may correlate with IT better than other trained networks</li>
-  <img src="2020ICLR_Fig1e.jpg" alt="2020ICLR_Fig1e" width="500" height="600">
+  <img src="2020ICLR_Fig1e.jpg" alt="2020ICLR_Fig1e" width="300" height="300">
   <li>In some cases, training may cause the network representations to become less, rather than more, similar to IT neural activity patterns</li>
-  <img src="2020ICLR_Fig2.jpg" alt="2020ICLR_Fig2" width="500" height="600">
+  <img src="2020ICLR_Fig2.jpg" alt="2020ICLR_Fig2" width="400" height="750">
   <li>Architecture may often play a larger role than training.</li>
 </ul>
 
 
 <h2>Get the data</h2>
-Data are available in an open S3 bucket. To download them use the following command:
+<p>Data are available in an open S3 bucket. To download them use the following command:<br>
 
-<span style="background-color:#C2DFFF">aws s3 cp s3://cusacklab/2020ICLR_BAICS_ATRC_opendata/ your/path/to/folder --recursive</span>
+<span style="background-color:#C2DFFF">aws s3 cp s3://cusacklab/2020ICLR_BAICS_ATRC_opendata/ your/path/to/folder --recursive</span></p>
 
-What will be downloaded:
+<p>What will be downloaded:
 <ol>
   <li>The trained unsupervised DeepCluster and supervised AlexNet</li>
   <li>The activations of each network in response to the 92 images</li>
   <li>The values (Kendall's Tau) of the correlations between each subject and each network's layer.</li>
 </ol>
-
+</p>
 
 <h2>Workflow</h2>
 

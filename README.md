@@ -1,7 +1,10 @@
 # Do the brain and CNNs similarly represent visual stimuli?
 In this project we compared the internal represnetations of differnt trained and untrained network in response to 92 images with the neural activity pattern in the inferior temporal (IT) cortex of 15 subjects in response to the same stimuli. Specifically, we evaluated two versions of AlexNet and two training regimes, supervised and unsupervised, recording the activity at the output to the ReLU of the five convolutional layers and the two fully connected layers.
 
-Stimuli and MRI data are available at the algonauts Project 2019.  
+Stimuli and MRI data are available at the [algonauts project 2019] (http://algonauts.csail.mit.edu/).  
+
+>Radoslaw Martin Cichy, Gemma Roig, Alex Andonian, Kshitij Dwivedi, Benjamin Lahner, AlexLascelles, Yalda Mohsenzadeh, Kandan Ramakrishnan, and Aude Oliva.  The algonauts project:A platform for communication between the sciences of biological and artificial intelligence.arXivpreprint arXiv:1905.05675, 2019.  
+
 The code used to get the networks' activations in response to each image is available in this repository the following folders:
 * deepcluster
 * modified_alexnet
@@ -11,9 +14,10 @@ For each netwokr's layer, we then characterised the representations through the 
 
 A repeated-measures ANOVA was then calculated with the Kendall's Tau values from every subject as dependent variable and the network type and layer as within-subject factors. As post-hocs, Student's t-tests were used to calculate whether the corresponding layers of different CNNs correlated with IT to a different extent, and whether within each CNN the representation in the last layer better correlated to IT compared with the first layer (2020ICLR_Analysis_Figures.py).
 
-## Requirements for DeepCluster
-**Requirements to run the DeepCluster model differ from the one necessary to run the rest of the repository.**
-To run DeepCluster please refer to [this page] (https://github.com/facebookresearch/deepcluster)
+## Installation
+**Requirements to run the [DeepCluster model] (https://github.com/facebookresearch/deepcluster) differ from the one necessary to run the rest of the repository.**
+The code within the deepcluster folder was tested on python version 2.7.  
+The rest of the repo was tested on python 3.7
 
 ## Get the data
 Data are available in an open S3 bucket. To download them use the following command:  
